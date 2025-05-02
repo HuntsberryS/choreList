@@ -18,10 +18,13 @@ if (storedChores) {
     renderChoreList()
 }
 function addToChores() {
-    chores.push(inputField.value)
-    inputField.value =""
-    localStorage.setItem("chores", JSON.stringify(chores))
-    renderChoreList()
+    if (inputField.value) {
+        chores.push(inputField.value)
+        inputField.value =""
+        localStorage.setItem("chores", JSON.stringify(chores))
+        renderChoreList()
+    }
+    
 }
 
 function renderChoreList () {
