@@ -1,3 +1,16 @@
+/*
+
+COLOR PALETTE
+
+WHITE: #FEFEFE
+BLACK: #000000
+TEXT INPUT BACKGROUND: #EEEEEE
+ADD BUTTON: #FFCC68
+DELETE BUTTON: #FF9548
+CHORE: #FBDF7C
+
+*/
+
 html, body {
     margin: 0;
     padding: 0;
@@ -24,23 +37,28 @@ button {
     color: #A4A4A4;
     background-color: #EEEE;
     text-align: center;
+    width: 60%;
 }
 #addchore { 
     background-color: #FFCC68;
 }
 #clearchores {
     background-color: #FF9548;
-    margin-bottom: 0px;
 
 }
 main {
     margin: 0 auto;
     max-width: 300px;
 }
+
 li {
     background-color: #FBDF7C;
-    list-style: none;
+    list-style-type: none;
     text-align: center;
     margin: 10px;
+}
 
+#chorelist {
+    margin-top: 0;
+    padding-left: 0;
 }
